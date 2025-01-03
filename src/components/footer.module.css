@@ -1,0 +1,409 @@
+.container {
+  position: relative;
+  background-image: url("/images/site-footer-bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contentWrapper {
+  max-width: 1920px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(3.4em, 1fr));
+  gap: 3em;
+
+  padding: 2% 5%;
+  z-index: 1;
+  justify-content: center;
+}
+
+.contentWrapper > *:nth-child(4) {
+  width: 110%;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(42, 57, 54, 0.9);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.column {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+
+  position: relative;
+  z-index: 2;
+}
+
+.text {
+  margin-top: 7%;
+  font-family: "manrope", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #98a8a5;
+}
+
+.address {
+  padding-left: 2rem;
+}
+
+.h3 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-bottom: 10%;
+  color: white;
+  padding-left: 2rem;
+}
+
+.ul {
+  font-family: "manrope", sans-serif;
+  font-size: 1rem;
+  /* font-weight: 800; */
+  color: #98a8a5;
+}
+
+.ul > * {
+  margin: 8% 0;
+  /* width: 100%; */
+}
+
+.ul li:hover {
+  color: white;
+  /* font-weight: 800; */
+}
+
+.SocialIcons {
+  display: flex;
+  gap: 2em;
+  margin-top: 10%;
+  padding-left: 2rem;
+}
+
+.SocialIcons li > * {
+  font-size: 1.4rem;
+  color: white;
+}
+
+.SocialIcons li > *:hover {
+  color: #00715d;
+}
+
+.lowerpart {
+  background-color: #212d2b;
+  display: flex;
+
+  height: 10vh;
+}
+
+.lowerpart > * {
+  font-size: 1.2rem;
+  margin: auto;
+  font-family: "manrope", sans-serif;
+  font-weight: 500;
+}
+
+.lowerpart > *:hover {
+  color: white;
+}
+
+.button {
+  background: linear-gradient(to bottom, #00715d 51%, #fbd45a 50%);
+  background-size: 100% 200%;
+  background-position: 0 100%;
+  color: black;
+  border: none;
+  padding: 1.1rem 1.5rem;
+  cursor: pointer;
+  transition: background-position 0.5s ease;
+  border-radius: 60px;
+  width: 85%;
+  max-width: 300px;
+  box-sizing: border-box;
+  margin: 5% 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.05rem;
+}
+
+.button:hover {
+  background-position: 100% 0;
+  color: white;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .text {
+    margin-top: 5%;
+    font-family: "manrope", sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #98a8a5;
+    margin-bottom: 0%;
+  }
+
+  .h3 {
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    font-size: 1.7rem;
+    margin-bottom: 0%;
+    color: white;
+  }
+
+  .ul > * {
+    margin: 6.4% 0;
+    font-size: 1.3rem;
+  }
+
+  .contentWrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+
+    gap: 2em;
+  }
+
+  .column {
+    width: 100%;
+    height: auto;
+  }
+
+  .lowerpart {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lowerpart > * {
+    font-size: 1.3rem;
+    margin: 0;
+    font-family: "manrope", sans-serif;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 430px) {
+  .contentWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+
+    justify-items: center;
+  }
+
+  .column {
+    width: 100%;
+    height: auto;
+  }
+
+  .text {
+    margin-top: 4%;
+    font-family: "manrope", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #98a8a5;
+    margin-bottom: 0%;
+  }
+
+  .h3 {
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    font-size: 1.6rem;
+    margin-bottom: 0%;
+    color: white;
+  }
+
+  .ul > * {
+    margin: 3% 0;
+    font-size: 1.1rem;
+  }
+
+  .lowerpart {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lowerpart > * {
+    font-size: 1.1rem;
+    margin: 0;
+    font-family: "manrope", sans-serif;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 429px) and (min-width: 315px) {
+  .contentWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+
+    justify-items: center;
+  }
+
+  .column {
+    width: 100%;
+    height: auto;
+  }
+
+  .text {
+    margin-top: 4%;
+    font-family: "manrope", sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #98a8a5;
+    margin-bottom: 0%;
+  }
+
+  .h3 {
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-bottom: 0%;
+    color: white;
+  }
+
+  .ul > * {
+    margin: 3% 0;
+    font-size: 0.8rem;
+  }
+
+  .lowerpart {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lowerpart > * {
+    font-size: 0.8rem;
+    margin: 0;
+    font-family: "manrope", sans-serif;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 314px) {
+  .contentWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+
+    justify-items: center;
+  }
+
+  .column {
+    width: 100%;
+    height: auto;
+  }
+
+  .text {
+    margin-top: 4%;
+    font-family: "manrope", sans-serif;
+    font-weight: 500;
+    font-size: 0.6rem;
+    color: #98a8a5;
+    margin-bottom: 0%;
+  }
+
+  .h3 {
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    margin-bottom: 0%;
+    color: white;
+  }
+
+  .ul > * {
+    margin: 3% 0;
+    font-size: 0.6rem;
+  }
+
+  .lowerpart {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lowerpart > * {
+    font-size: 0.5rem;
+    margin: 0;
+    font-family: "manrope", sans-serif;
+    font-weight: 500;
+  }
+}
+
+/*! STYLING FOR BUTTON  */
+
+@media (max-width: 1200px) and (min-width: 754px) {
+  .button {
+    font-size: 1.2rem;
+    width: 30vw;
+    font-weight: 700;
+    padding: 1.5rem 2rem;
+  }
+}
+@media (max-width: 753px) and (min-width: 572px) {
+  .button {
+    font-size: 0.8rem;
+    width: 27vw;
+    font-weight: 700;
+    padding: 1.4rem 1.5rem;
+  }
+}
+
+@media (max-width: 571px) and (min-width: 453px) {
+  .button {
+    font-size: 0.8rem;
+    font-weight: 700;
+    width: 33vw;
+    padding: 1rem 1.4rem;
+  }
+}
+
+@media (max-width: 452px) and (min-width: 391px) {
+  .button {
+    font-size: 0.6rem;
+    font-weight: 700;
+    width: 31vw;
+    padding: 0.8rem 1.3rem;
+  }
+}
+@media (max-width: 390px) and (min-width: 348px) {
+  .button {
+    font-size: 0.5rem;
+    font-weight: 700;
+    width: 30vw;
+    padding: 0.7rem 1.2rem;
+  }
+}
+@media (max-width: 347px) and (min-width: 305px) {
+  .button {
+    font-size: 0.4rem;
+    font-weight: 700;
+    width: 30vw;
+    padding: 0.6rem 1rem;
+  }
+}
+@media (max-width: 304px) {
+  .button {
+    font-size: 0.35rem;
+    font-weight: 700;
+    width: 33vw;
+    padding: 0.5rem 0.8rem;
+  }
+}

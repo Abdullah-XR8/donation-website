@@ -1,0 +1,375 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Section {
+  width: 100vw;
+  height: auto;
+  background-color: #f9f4e8;
+  margin-top: 2%;
+}
+
+.Flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 1920px;
+  margin: 0 auto;
+
+  height: auto;
+  gap: 2%;
+  padding: 2% 5%;
+}
+
+.text {
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Title {
+  font-family: "Lato", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.4rem;
+  color: #00715d;
+  flex: 0 0 10%;
+  margin-left: 5%;
+}
+
+.Heading {
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3rem;
+  text-align: center;
+  color: #283734;
+  margin: 2% 4%;
+  text-align: left;
+  flex: 0 0 20%;
+  line-height: 1em;
+}
+
+.Paragraph {
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.07rem;
+  text-align: left;
+  color: #707876;
+  margin: 4%;
+  flex: 0 0 20%;
+  line-height: 1.4em;
+  word-spacing: 0.4em;
+}
+
+/* .button {
+  background: linear-gradient(to bottom, #283734 49%, #fbd45a 50%);
+  background-size: 100% 200%;
+  background-position: 0 100%;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-position 0.5s ease;
+  border-radius: 30px;
+  width: 52%;
+  max-width: 300px;
+  box-sizing: border-box;
+  margin: 5%;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.05rem;
+}
+
+.button:hover {
+  background-position: 100% 0;
+  color: white;
+} */
+
+.button {
+  background: linear-gradient(to bottom, #283734 49%, #fbd45a 49%);
+  background-size: 100% 200%;
+  background-position: 0 100%;
+  color: black;
+  border: none;
+  padding: 1.2rem 1.5rem;
+  cursor: pointer;
+  transition: background-position 0.5s ease;
+  border-radius: 60px;
+  width: 55%;
+  max-width: 300px;
+  box-sizing: border-box;
+  margin: 5% 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.05rem;
+}
+
+.button:hover {
+  background-position: 100% 0;
+  color: white;
+}
+
+@media (min-width: 1551px) and (max-width: 1797px) {
+  .Heading {
+    font-size: 3.4rem;
+  }
+
+  .Paragraph {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1798px) {
+  .Heading {
+    font-size: 4rem;
+  }
+
+  .Paragraph {
+    font-size: 1.4rem;
+  }
+}
+
+.CardsContainer {
+  flex: 0 0 70%;
+}
+
+@media (min-width: 1167px) and (max-width: 1344px) {
+  .Heading {
+    font-size: 2.6rem;
+  }
+
+  .Paragraph {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1166px) {
+  .Heading {
+    font-size: 2.2rem;
+  }
+
+  .Paragraph {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 990px) and (min-width: 526px) {
+  .Flex {
+    flex-direction: column;
+    gap: 3em;
+  }
+
+  .text {
+    flex: 0 0 100%;
+  }
+
+  .Title {
+    flex: 0 0 100%;
+    margin: 2% 5%;
+    margin-left: 0;
+    font-size: 1.4rem;
+  }
+
+  .Heading {
+    flex: 0 0 100%;
+    margin: 1% 5%;
+    font-size: 3rem;
+    line-height: 1em;
+    margin-left: 0;
+  }
+
+  .Paragraph {
+    flex: 0 0 100%;
+    margin: 2% 5%;
+    font-size: 1.3rem;
+    line-height: 1.5em;
+    word-spacing: 0.1em;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 525px) and (min-width: 315px) {
+  .Flex {
+    flex-direction: column;
+    gap: 3em;
+  }
+
+  .text {
+    flex: 0 0 100%;
+  }
+
+  .Title {
+    flex: 0 0 100%;
+    margin: 2% 5%;
+    margin-left: 0;
+    font-size: 1rem;
+  }
+  .Heading {
+    font-size: 1.7rem;
+    margin: 1% 0;
+  }
+
+  .Paragraph {
+    font-size: 0.7rem;
+    margin: 2% 0;
+  }
+}
+
+@media (max-width: 314px) {
+  .Flex {
+    flex-direction: column;
+    gap: 3em;
+  }
+
+  .text {
+    flex: 0 0 100%;
+  }
+
+  .Title {
+    flex: 0 0 100%;
+    margin: 2% 5%;
+    margin-left: 0;
+    font-size: 0.8rem;
+  }
+  .Heading {
+    font-size: 1.3rem;
+    margin: 1% 0;
+  }
+
+  .Paragraph {
+    font-size: 0.55rem;
+    margin: 2% 0;
+  }
+}
+
+/*! STYLING FOR BUTTON  */
+/* @media (max-width: 1243px) and (min-width: 1200px) {
+  .button {
+    width: 18vw;
+    font-size: 1rem;
+    border-radius: 50px;
+  }
+}
+@media (max-width: 1199px) and (min-width: 991px) {
+  .button {
+    width: 17vw;
+    font-size: 0.9rem;
+    margin: 2% 4%;
+    border-radius: 40px;
+  }
+}
+@media (max-width: 990px) and (min-width: 832px) {
+  .button {
+    width: 17vw;
+    font-size: 0.8rem;
+    margin: 2% 0;
+  }
+}
+@media (max-width: 831px) and (min-width: 689px) {
+  .button {
+    width: 17vw;
+    font-size: 0.6rem;
+    margin: 2% 0;
+    font-weight: 700;
+  }
+}
+@media (max-width: 688px) and (min-width: 580px) {
+  .button {
+    width: 18vw;
+    font-size: 0.5rem;
+    margin: 2% 0;
+    font-weight: 700;
+  }
+}
+@media (max-width: 579px) and (min-width: 416px) {
+  .button {
+    width: 24vw;
+    font-size: 0.45rem;
+    margin: 2% 0;
+    font-weight: 700;
+  }
+}
+@media (max-width: 415px) and (min-width: 340px) {
+  .button {
+    width: 21vw;
+    font-size: 0.35rem;
+    margin: 2% 0;
+    font-weight: 700;
+    padding: 0 0.4rem;
+  }
+}
+@media (max-width: 339px) and (min-width: 302px) {
+  .button {
+    width: 17vw;
+    font-size: 0.3rem;
+    margin: 2% 0;
+    font-weight: 700;
+    padding: 0 0.4rem;
+  }
+} */
+
+@media (max-width: 1200px) and (min-width: 754px) {
+  .button {
+    font-size: 1.2rem;
+    width: 29vw;
+    font-weight: 700;
+    padding: 1.5rem 2rem;
+  }
+}
+@media (max-width: 753px) and (min-width: 572px) {
+  .button {
+    font-size: 0.8rem;
+    width: 27vw;
+    font-weight: 700;
+    padding: 1.1rem 1.5rem;
+  }
+}
+
+@media (max-width: 571px) and (min-width: 453px) {
+  .button {
+    font-size: 0.8rem;
+    font-weight: 700;
+    width: 33vw;
+    padding: 1rem 1.4rem;
+  }
+}
+
+@media (max-width: 452px) and (min-width: 391px) {
+  .button {
+    font-size: 0.6rem;
+    font-weight: 700;
+    width: 31vw;
+    padding: 0.8rem 1.3rem;
+  }
+}
+@media (max-width: 390px) and (min-width: 348px) {
+  .button {
+    font-size: 0.5rem;
+    font-weight: 700;
+    width: 30vw;
+    padding: 0.7rem 1.2rem;
+  }
+}
+@media (max-width: 347px) and (min-width: 305px) {
+  .button {
+    font-size: 0.4rem;
+    font-weight: 700;
+    width: 30vw;
+    padding: 0.6rem 1rem;
+  }
+}
+@media (max-width: 304px) {
+  .button {
+    font-size: 0.35rem;
+    font-weight: 700;
+    width: 30vw;
+    padding: 0.5rem 0.8rem;
+  }
+}

@@ -1,0 +1,451 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Caveat:wght@400..700&family=Cedarville+Cursive&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden; /* padding: 2% 4%; */
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  background-image: url("/images/accordion-img.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.hero {
+  margin: 2% 2.7%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.contentWrapper {
+  max-width: 1920px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.TextSection,
+.FAQSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.TextSection span {
+  font-family: "Cedarville Cursive", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.6rem;
+  color: #00715d;
+}
+
+.TextSection h2 {
+  font-family: "Nunito", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3rem;
+  color: #283734;
+  line-height: 3.7rem;
+}
+
+.TextSection p {
+  font-family: "Manrope", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.09rem;
+  color: #6f7775;
+  line-height: 2rem;
+}
+
+.TextSection .button {
+  background: linear-gradient(to bottom, #283734 48.5%, #fbd45a 50%);
+  background-size: 100% 200%;
+  background-position: 0 100%;
+  color: black;
+  border: none;
+  padding: 1.2rem 1.5rem;
+  cursor: pointer;
+  transition: background-position 0.5s ease;
+  border-radius: 30px;
+  width: 45%;
+  max-width: 300px;
+  border-radius: 40px;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.1rem;
+}
+
+.TextSection .button:hover {
+  background-position: 100% 0;
+  color: white;
+}
+
+.FAQSection {
+  gap: 1.65rem;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  margin: 0.18rem 0;
+}
+
+.faq h4 {
+  cursor: pointer;
+  margin: 0;
+  padding: 0.8rem;
+  color: #283734;
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.5);
+}
+
+.faq h4:hover {
+  color: #00715d;
+  font-weight: 700;
+}
+
+.faq p {
+  margin: 0;
+  padding: 0.3rem 0.8rem;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  overflow: hidden;
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #6f7775;
+  font-size: 1.1rem;
+  max-height: 0;
+  opacity: 0;
+  box-shadow: 0 0 6px 2px rgba(0, 113, 93, 0.5);
+}
+
+.faq .hide {
+  max-height: 0;
+  opacity: 0;
+}
+
+.faq .show {
+  max-height: 10vh;
+  opacity: 1;
+}
+
+@media (max-width: 1200px) and (min-width: 990px) {
+  .contentWrapper {
+    padding: 2%;
+  }
+
+  .TextSection span {
+    font-size: 1.4rem;
+  }
+
+  .TextSection h2 {
+    font-size: 2.5rem;
+  }
+
+  .TextSection p {
+    font-size: 1rem;
+  }
+
+  .faq h4 {
+    font-size: 1rem;
+  }
+
+  .faq p {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+  }
+}
+
+@media (max-width: 989px) and (min-width: 650px) {
+  .hero {
+    padding: 4rem 1rem;
+  }
+  .TextSection {
+    gap: 1rem;
+  }
+  .TextSection span {
+    font-size: 1.3rem;
+  }
+
+  .TextSection h2 {
+    font-size: 2.6rem;
+    line-height: 2.8rem;
+  }
+
+  .TextSection p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+
+  .FAQSection {
+    margin: 5% 0;
+    gap: 1rem;
+  }
+
+  .faq h4 {
+    font-size: 1rem;
+  }
+
+  .faq p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+}
+
+@media (max-width: 649px) and (min-width: 575px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+  .TextSection {
+    gap: 0.6rem;
+  }
+  .TextSection span {
+    font-size: 1.2rem;
+  }
+
+  .TextSection h2 {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+  }
+
+  .TextSection p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+
+  .FAQSection {
+    margin: 5% 0;
+    gap: 1rem;
+  }
+
+  .faq h4 {
+    font-size: 1rem;
+  }
+
+  .faq p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+}
+
+@media (max-width: 574px) and (min-width: 400px) {
+  .hero {
+    padding: 3rem 0.7rem;
+  }
+
+  .TextSection {
+    gap: 0.5rem;
+  }
+  .TextSection span {
+    font-size: 1.1rem;
+  }
+
+  .TextSection h2 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  .TextSection p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+  }
+
+  .FAQSection {
+    margin: 5% 0;
+    gap: 1rem;
+  }
+
+  .faq h4 {
+    font-size: 0.9rem;
+  }
+
+  .faq p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+  }
+}
+
+@media (max-width: 399px) and (min-width: 315px) {
+  .hero {
+    padding: 3rem 0.6rem;
+  }
+
+  .TextSection {
+    gap: 0.4rem;
+  }
+  .TextSection span {
+    font-size: 1rem;
+  }
+
+  .TextSection h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .TextSection p {
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+
+  .FAQSection {
+    margin: 5% 0;
+    gap: 1rem;
+  }
+
+  .faq h4 {
+    font-size: 0.8rem;
+  }
+
+  .faq p {
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+}
+
+@media (max-width: 314px) {
+  .hero {
+    padding: 2.5rem 0.5rem;
+  }
+
+  .TextSection {
+    gap: 0.3rem;
+  }
+  .TextSection span {
+    font-size: 0.7rem;
+  }
+
+  .TextSection h2 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  .TextSection p {
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+  }
+
+  .FAQSection {
+    margin: 5% 0;
+    gap: 1rem;
+  }
+
+  .faq h4 {
+    font-size: 0.7rem;
+  }
+
+  .faq p {
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .main {
+    margin: 5rem 0;
+  }
+  .hero {
+    flex-direction: column;
+  }
+
+  .FAQSection {
+    width: 100%;
+    /* margin: 2% 0; */
+  }
+
+  .faq {
+    padding: 0;
+  }
+}
+
+/*! STYLING FOR BUTTON  */
+
+@media (max-width: 1200px) and (min-width: 754px) {
+  .TextSection .button {
+    font-size: 1.2rem;
+    width: 36vw;
+    font-weight: 700;
+    padding: 1.5rem 2rem;
+  }
+}
+@media (max-width: 753px) and (min-width: 572px) {
+  .TextSection .button {
+    font-size: 0.8rem;
+    width: 33vw;
+    font-weight: 700;
+    padding: 1.1rem 1.5rem;
+  }
+}
+
+@media (max-width: 571px) and (min-width: 453px) {
+  .TextSection .button {
+    font-size: 0.8rem;
+    font-weight: 700;
+    width: 40vw;
+    padding: 1rem 1.3rem;
+  }
+}
+
+@media (max-width: 452px) and (min-width: 391px) {
+  .TextSection .button {
+    font-size: 0.6rem;
+    font-weight: 700;
+    width: 37vw;
+    padding: 0.8rem 1.3rem;
+  }
+}
+@media (max-width: 390px) and (min-width: 348px) {
+  .TextSection .button {
+    font-size: 0.5rem;
+    font-weight: 700;
+    width: 36vw;
+    padding: 0.7rem 1.2rem;
+  }
+}
+@media (max-width: 347px) and (min-width: 305px) {
+  .TextSection .button {
+    font-size: 0.4rem;
+    font-weight: 700;
+    width: 33vw;
+    padding: 0.6rem 1rem;
+  }
+}
+@media (max-width: 304px) {
+  .TextSection .button {
+    font-size: 0.35rem;
+    font-weight: 700;
+    width: 33vw;
+    padding: 0.5rem 0.8rem;
+  }
+}

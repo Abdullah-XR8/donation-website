@@ -1,0 +1,524 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Cedarville+Cursive&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Cedarville+Cursive&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Cedarville+Cursive&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.main {
+  width: 100vw;
+  height: auto;
+  padding: 5%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.leftSide {
+  width: 45vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f4e8;
+}
+
+.image {
+  position: relative;
+  width: fit-content;
+}
+
+.image img {
+  width: 25vw;
+  height: auto;
+  display: block;
+}
+
+.image img:first-child {
+  position: relative;
+}
+
+.image img:last-child {
+  position: absolute;
+  top: -7%;
+  right: 10%;
+}
+
+.rightside {
+  width: 45vw;
+  height: auto;
+  padding: 2%;
+}
+
+.rightside span {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #00715d;
+}
+
+.rightside h2 {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2.5rem;
+  color: #283734;
+}
+
+.rightside p {
+  margin-top: 3%;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5em;
+  color: #6f7775;
+}
+
+.rightside .fundText {
+  margin-top: 4%;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.05rem;
+  line-height: 1.9em;
+  color: #283734;
+  border-left: 5px solid #00715d;
+  padding-left: 3%;
+}
+
+.rightside .fundText span {
+  color: #fbd45a;
+}
+
+.box {
+  display: flex;
+  margin-top: 3%;
+  gap: 8%;
+}
+
+.box li {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  width: 16vw;
+  height: auto;
+}
+
+.box .iconStyle {
+  color: #00715d;
+  font-size: 5rem;
+}
+
+.box li .para a {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #283734;
+  transition: color 0.2s ease;
+}
+
+.box li .para a:hover {
+  color: #00715d;
+}
+
+.box li .para .Paragraph {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8rem;
+  text-decoration: rgb(111, 119, 117);
+  line-height: 1.5em;
+  font-weight: 700;
+}
+
+.button {
+  background: linear-gradient(to bottom, #283734 49%, #fbd45a 49%);
+  background-size: 100% 200%;
+  background-position: 0 100%;
+  color: black;
+  border: none;
+  padding: 1.2rem 1.5rem;
+  cursor: pointer;
+  transition: background-position 0.5s ease;
+  border-radius: 60px;
+  width: 40%;
+  max-width: 300px;
+  box-sizing: border-box;
+  margin: 5% 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.05rem;
+}
+
+.button:hover {
+  background-position: 100% 0;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .leftSide {
+    width: 100%;
+    height: auto;
+  }
+
+  .image {
+    position: relative;
+    width: fit-content;
+  }
+
+  .image img {
+    width: 50vw;
+    height: auto;
+    display: block;
+    padding: 20% 0;
+  }
+
+  .image img:first-child {
+    position: relative;
+  }
+
+  .image img:last-child {
+    position: absolute;
+    top: -7%;
+    right: 10%;
+  }
+
+  .rightside {
+    width: 100%;
+    height: auto;
+    padding: 5% 10%;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 705px) {
+  .rightside span {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  .rightside h2 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+
+  .rightside p {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .rightside .fundText {
+    margin: 6% 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .box {
+    width: 100%;
+    height: auto;
+    gap: 0.5rem;
+  }
+
+  .box li {
+    width: 100%;
+    height: auto;
+  }
+
+  .box li .iconStyle {
+    width: 3rem;
+    height: auto;
+  }
+
+  .box .para p a {
+    font-size: 1.7rem;
+    font-weight: 800;
+  }
+
+  .box li .para .Paragraph {
+    font-size: 1rem;
+    line-height: 1.65em;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 704px) and (min-width: 512px) {
+  .rightside span {
+    font-size: 1rem;
+  }
+
+  .rightside h2 {
+    font-size: 2rem;
+  }
+
+  .rightside p {
+    font-size: 0.9rem;
+  }
+
+  .rightside .fundText {
+    font-size: 0.9rem;
+  }
+
+  .box {
+    width: 100%;
+    height: auto;
+    margin: 3% 0;
+  }
+
+  .box li {
+    width: 100%;
+    height: auto;
+  }
+
+  .box li .iconStyle {
+    width: 4rem;
+    height: auto;
+  }
+
+  .box .para p a {
+    font-size: 1.1rem;
+    font-weight: 800;
+  }
+
+  .box li .para .Paragraph {
+    font-size: 0.8rem;
+    line-height: 1.65em;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 511px) and (min-width: 400px) {
+  .rightside span {
+    font-size: 0.7rem;
+  }
+
+  .rightside h2 {
+    font-size: 1.5rem;
+  }
+
+  .rightside p {
+    font-size: 0.7rem;
+  }
+
+  .rightside .fundText {
+    font-size: 0.7rem;
+  }
+
+  .rightside .fundText span {
+    font-size: 0.7rem;
+  }
+
+  .box {
+    width: 100%;
+    height: auto;
+    margin: 3% 0;
+  }
+
+  .box li {
+    width: 100%;
+    height: auto;
+  }
+
+  .box li .iconStyle {
+    width: 3rem;
+    height: auto;
+  }
+
+  .box .para p a {
+    font-size: 0.8rem;
+    font-weight: 800;
+  }
+
+  .box li .para .Paragraph {
+    font-size: 0.6rem;
+    line-height: 1.65em;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 399px) and (min-width: 315px) {
+  .rightside span {
+    font-size: 0.6rem;
+  }
+
+  .rightside h2 {
+    font-size: 1.3rem;
+  }
+
+  .rightside p {
+    font-size: 0.6rem;
+  }
+
+  .rightside .fundText {
+    font-size: 0.6rem;
+  }
+
+  .rightside .fundText span {
+    font-size: 0.6rem;
+  }
+
+  .box {
+    width: 100%;
+    height: auto;
+    margin: 3% 0;
+  }
+
+  .box li {
+    width: 100%;
+    height: auto;
+  }
+
+  .box li .iconStyle {
+    width: 2rem;
+    height: auto;
+  }
+
+  .box .para p a {
+    font-size: 0.7rem;
+    font-weight: 800;
+  }
+
+  .box li .para .Paragraph {
+    font-size: 0.4rem;
+    line-height: 1.65em;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 314px) {
+  .rightside span {
+    font-size: 0.5rem;
+  }
+
+  .rightside h2 {
+    font-size: 1.2rem;
+  }
+
+  .rightside p {
+    font-size: 0.5rem;
+  }
+
+  .rightside .fundText {
+    font-size: 0.5rem;
+  }
+
+  .rightside .fundText span {
+    font-size: 0.5rem;
+  }
+
+  .box {
+    width: 100%;
+    height: auto;
+    margin: 3% 0;
+  }
+
+  .box li {
+    width: 100%;
+    height: auto;
+  }
+
+  .box li .iconStyle {
+    width: 1.7rem;
+    height: auto;
+  }
+
+  .box .para p a {
+    font-size: 0.6rem;
+    font-weight: 800;
+  }
+
+  .box li .para .Paragraph {
+    font-size: 0.3rem;
+    line-height: 1.65em;
+    font-weight: 500;
+  }
+}
+
+/*! STYLING FOR BUTTON  */
+
+@media (max-width: 1200px) and (min-width: 754px) {
+  .button {
+    font-size: 1.2rem;
+    width: 30vw;
+    font-weight: 700;
+    padding: 1.5rem 2rem;
+  }
+}
+@media (max-width: 753px) and (min-width: 572px) {
+  .button {
+    font-size: 0.8rem;
+    width: 27vw;
+    font-weight: 700;
+    padding: 1.1rem 1.5rem;
+  }
+}
+
+@media (max-width: 571px) and (min-width: 453px) {
+  .button {
+    font-size: 0.8rem;
+    font-weight: 700;
+    width: 33vw;
+    padding: 1rem 1.4rem;
+  }
+}
+
+@media (max-width: 452px) and (min-width: 391px) {
+  .button {
+    font-size: 0.6rem;
+    font-weight: 700;
+    width: 31vw;
+    padding: 0.8rem 1.3rem;
+  }
+}
+@media (max-width: 390px) and (min-width: 348px) {
+  .button {
+    font-size: 0.5rem;
+    font-weight: 700;
+    width: 30vw;
+    padding: 0.7rem 1.2rem;
+  }
+}
+@media (max-width: 347px) and (min-width: 305px) {
+  .button {
+    font-size: 0.4rem;
+    font-weight: 700;
+    width: 30vw;
+    padding: 0.6rem 1rem;
+  }
+}
+@media (max-width: 304px) {
+  .button {
+    font-size: 0.35rem;
+    font-weight: 700;
+    width: 33vw;
+    padding: 0.5rem 0.8rem;
+  }
+}
